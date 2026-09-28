@@ -1,4 +1,10 @@
 pandas
 numpy
 seaborn
--e .
+matplotlib
+scikit-learn
+#-e .  =>Only uncomment this line if you want to install the package 
+# (at the end of the line) in editable mode. 
+# This is useful for development purposes,
+# allowing you to make changes to the package 
+# and have them reflected immediately without needing to reinstall.
