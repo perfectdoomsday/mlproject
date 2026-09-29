@@ -28,13 +28,13 @@ class DataTransformation:
         
         '''
         try:
-            numerical_columns = ["writing_score", "reading_score"]
+            numerical_columns = ["writing score", "reading score"]
             categorical_columns = [
                 "gender",
-                "race_ethnicity",
-                "parental_level_of_education",
+                "race/ethnicity",
+                "parental level of education",
                 "lunch",
-                "test_preparation_course",
+                "test preparation course",
             ]
 
             num_pipeline= Pipeline(
@@ -97,7 +97,8 @@ class DataTransformation:
             logging.info(
                 f"Applying preprocessing object on training dataframe and testing dataframe."
             )
-
+            # print("Columns in training dataframe:")
+            # print(input_feature_train_df.columns.tolist())
             input_feature_train_arr=preprocessing_obj.fit_transform(input_feature_train_df)
             input_feature_test_arr=preprocessing_obj.transform(input_feature_test_df)
 
