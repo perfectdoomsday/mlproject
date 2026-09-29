@@ -3,6 +3,8 @@ numpy
 seaborn
 matplotlib
 scikit-learn
+catboost
+xgboost
 #-e .  =>Only uncomment this line if you want to install the package 
 # (at the end of the line) in editable mode. 
 # This is useful for development purposes,
